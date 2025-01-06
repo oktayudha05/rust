@@ -1,6 +1,7 @@
 mod variable;
 mod operator;
 mod condition;
+mod perulangan;
 fn main() {
     #[cfg(feature = "variable")]
     variable::run();
@@ -10,4 +11,7 @@ fn main() {
 
     #[cfg(feature = "condition")]
     condition::run();
+
+    #[cfg(feature = "perulangan")]
+    perulangan::run();
 }
