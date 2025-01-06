@@ -111,7 +111,7 @@ pub fn run(){
       println!("{i}");
     }
 
-    // loop pada array
+    // looping pada array
     println!("loop pada array");
     let names = ["panjul", "bokol", "agus", "yanto kopling", "saus tomat"];
     for name in names{

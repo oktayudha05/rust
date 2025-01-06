@@ -1,17 +1,23 @@
-mod variable;
-mod operator;
-mod condition;
-mod perulangan;
+mod materi{
+    pub mod variable;
+    pub mod operator;
+    pub mod condition;
+    pub mod perulangan;
+    pub mod array;
+}
 fn main() {
     #[cfg(feature = "variable")]
-    variable::run();
+    materi::variable::run();
     
     #[cfg(feature = "operator")]
-    operator::run();
+    materi::operator::run();
 
     #[cfg(feature = "condition")]
-    condition::run();
+    materi::condition::run();
 
     #[cfg(feature = "perulangan")]
-    perulangan::run();
+    materi::perulangan::run();
+
+    #[cfg(feature = "array")]
+    materi::array::run();
 }
