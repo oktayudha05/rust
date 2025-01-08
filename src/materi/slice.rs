@@ -1,15 +1,5 @@
 #[cfg(feature = "slice")]
 pub fn run(){
-  let mut slice = (1, "ikan", true);
-  println!("{slice:?}");
-
-  let slice1 = slice.1;
-  slice.1 = "yanto";
-
-  println!("{}", slice1);
-  println!("{}", slice.1);
-  println!("{slice:?}");
-
   // slice dari array
   let arr = [2, 4, 78, 14, 61]; // ada di stack
   let slc = &arr[1..4]; // data merujuk ke arr yang ada di stack.. bukan ngopi (Pinjem secara read-only.)

@@ -5,6 +5,7 @@ mod materi{
     pub mod perulangan;
     pub mod array;
     pub mod slice;
+    pub mod tuple;
 }
 fn main() {
     #[cfg(feature = "variable")]
@@ -24,4 +25,7 @@ fn main() {
 
     #[cfg(feature = "slice")]
     materi::slice::run();
+
+    #[cfg(feature = "tuple")]
+    materi::tuple::run();
 }
