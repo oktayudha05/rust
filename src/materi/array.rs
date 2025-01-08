@@ -58,7 +58,7 @@ pub fn run(){
     ["yanto", "kopling", "kak gem"],
   ];
 
-  for baris in nest {
+  for baris in nest { // kepemilikan nest di pindah ke for.. jika tidak ingin brrti pakai &nest
     for el in baris {
       print!("{el} ");
     }

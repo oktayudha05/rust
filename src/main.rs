@@ -4,6 +4,7 @@ mod materi{
     pub mod condition;
     pub mod perulangan;
     pub mod array;
+    pub mod slice;
 }
 fn main() {
     #[cfg(feature = "variable")]
@@ -20,4 +21,7 @@ fn main() {
 
     #[cfg(feature = "array")]
     materi::array::run();
+
+    #[cfg(feature = "slice")]
+    materi::slice::run();
 }
